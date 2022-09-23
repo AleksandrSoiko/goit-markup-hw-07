@@ -84,14 +84,14 @@ ul {
 }
 
 /* navigation setup */
-.link.link-current {
+.link--current {
   color: var(--blue-txt-color);
 }
 
-.nav .list-item {
+.nav__item {
   position: relative;
 }
-.link-current::after {
+.link--current::after {
   position: absolute;
   left: 0;
   bottom: -1%;
@@ -104,7 +104,7 @@ ul {
   border-radius: 2px;
 }
 
-/* ========= */
+/* =======*/
 
 .btn {
   font-family: inherit;
@@ -127,7 +127,7 @@ ul {
 
 /* logo style */
 
-.header-logo {
+.header__logo {
   margin-right: 93px;
 
   color: var(--black-txt-color);
@@ -138,36 +138,36 @@ ul {
   letter-spacing: 0.03em;
 }
 
-.header-logo:active .header-logo:focus,
-.header-logo:hover {
+.header__logo:active .header__logo:focus,
+.header__logo:hover {
   color: var(--black-txt-color);
 }
 
-.link .logo-txt {
+.link .logo__txt {
   color: #2196f3;
 }
 
 /* header contact style */
 
-.header-container {
+.header__container {
   display: flex;
   align-items: center;
 }
 
-.header-list {
+.nav__list {
   display: flex;
   gap: 50px;
   padding: 0;
 }
 
-.header-contact {
+.header__contact {
   display: flex;
   gap: 50px;
   margin-left: auto;
 }
 
-.header-nav-link,
-.link-contact {
+.nav__link,
+.contact__link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -175,7 +175,7 @@ ul {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.link.link-contact {
+.link.contact__link {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -183,15 +183,15 @@ ul {
   color: var(--light-txt-color);
 }
 
-.link.link-contact:active {
+.link.contact__link:active {
   color: orange;
 }
-.link.link-contact:focus,
-.link.link-contact:hover {
+.link.contact__link:focus,
+.link.contact__link:hover {
   color: var(--blue-txt-color);
 }
 
-.icon-header {
+.contact__icon {
   fill: currentColor;
 }
 
@@ -215,13 +215,13 @@ ul {
   padding-bottom: 200px;
 }
 
-.container-main-title {
+.container__main-title {
   width: 696px;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 30px;
 }
-.main-title-hero {
+.main-title {
   text-align: center;
 
   color: var(--white-color);
@@ -231,7 +231,7 @@ ul {
   line-height: 60px;
   letter-spacing: 0.06em;
 }
-.section-hero .btn {
+.section-hero__btn {
   display: block;
   padding: 10px 32px;
   margin-right: auto;
@@ -248,9 +248,9 @@ ul {
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.section-hero .btn:active,
-.section-hero .btn:focus,
-.section-hero .btn:hover {
+.section-hero__btn:active,
+.section-hero__btn:focus,
+.section-hero__btn:hover {
   background-color: rgb(1, 122, 220);
   color: #212121;
 }
@@ -271,12 +271,12 @@ ul {
   overflow: hidden;
 }
 
-.list-advantage {
+.section-advantage__list {
   display: flex;
   gap: 30px;
 }
 
-.icon-place {
+.section-advantage__container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -287,14 +287,14 @@ ul {
   margin-bottom: 30px;
 }
 
-.advantage {
+.section-advantage__title {
   margin-bottom: 10px;
 
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.03em;
 }
-.advantage-text {
+.section-advantage__text {
   min-width: 270px;
 
   color: var(--light-txt-color);
@@ -304,20 +304,20 @@ ul {
 }
 
 /* ============ our work section style ========== */
-.work {
+.section-work {
   padding-top: 0;
 }
 
-.work-list {
+.section-work__list {
   display: flex;
   gap: 30px;
 }
 
-.work-container {
+.section-work__container {
   position: relative;
 }
 
-.work-text {
+.section-work__text {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -337,7 +337,7 @@ ul {
   background-color: rgba(47, 48, 58, 0.8);
 }
 
-.second-title {
+.section-work__title {
   text-align: center;
   margin-bottom: 50px;
 
@@ -349,7 +349,7 @@ ul {
 
 /* ========== our team block style ======== */
 
-.team-section .list {
+.team-section__list {
   display: flex;
   gap: 30px;
 }
@@ -358,7 +358,7 @@ ul {
   background-color: var(--light-bcg-color);
 }
 
-.team-item {
+.team-section__item {
   text-align: center;
   border-bottom-right-radius: 4px;
   border-bottom-left-radius: 4px;
@@ -367,11 +367,11 @@ ul {
   background-color: var(--white-color);
 }
 
-.img-team {
+.team-section__img {
   margin-bottom: 30px;
 }
 
-.team-title {
+.team-section__title {
   margin-bottom: 50px;
   text-align: center;
 
@@ -380,7 +380,7 @@ ul {
   letter-spacing: 0.03em;
 }
 
-.team-name {
+.team-section__name {
   margin-bottom: 10px;
 
   font-weight: 500;
@@ -389,7 +389,7 @@ ul {
   letter-spacing: 0.03em;
 }
 
-.team-position {
+.team-section__position {
   margin-bottom: 16px;
 
   color: var(--light-txt-color);
@@ -405,12 +405,12 @@ ul {
   gap: 10px;
   margin-bottom: 30px;
 }
-.social-item {
+.social-list__item {
   width: 44px;
   height: 44px;
 }
 
-.socials-link {
+.social-list__link {
   display: inline-flex;
   border-radius: 50%;
   width: 100%;
@@ -423,19 +423,19 @@ ul {
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-icon {
+.social-list__icon {
   fill: currentColor;
 }
 
-.socials-link:hover,
-.socials-link:focus {
+.social-list__link:hover,
+.social-list__link:focus {
   background-color: var(--blue-txt-color);
   color: var(--white-color);
 }
 
 /* ============ client block style ======== */
 
-.client-title {
+.client-section__title {
   margin-bottom: 50px;
 
   font-size: 36px;
@@ -444,12 +444,12 @@ ul {
   letter-spacing: 0.03em;
 }
 
-.client-list {
+.client-section__list {
   display: flex;
   gap: 30px;
 }
 
-.client-link {
+.client-section__link {
   display: inline-flex;
   width: 170px;
   height: 92px;
@@ -463,12 +463,12 @@ ul {
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.client-icon {
+.client-section__icon {
   fill: currentColor;
 }
 
-.client-link:hover,
-.client-link:focus {
+.client-section__link:hover,
+.client-section__link:focus {
   border-color: var(--blue-txt-color);
   fill: var(--blue-txt-color);
 }

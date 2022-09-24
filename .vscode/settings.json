@@ -29,14 +29,14 @@
       {
         "scope": ["entity.other.attribute-name.html"],
         "settings": {
-          "foreground": "#510291"
+          "foreground": "#d5a618"
         }
       },
       // colour of class names
       {
         "scope": ["string.quoted.double.html", "entity.other.attribute-name.class.css"],
         "settings": {
-          "foreground": "#e0b525"
+          "foreground": "#aa1587"
         }
       },
       // colour of start quotes
@@ -50,7 +50,7 @@
       {
         "scope": ["punctuation.definition.string.end.html"],
         "settings": {
-          "foreground": "#9d0000"
+          "foreground": "#37ff00"
         }
       }
     ]

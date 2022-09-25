@@ -61,7 +61,7 @@
   }
 
   &__container {
-    @include flex-box ($gap: none, $justify-content: null);
+    @include flex-box ($gap: null, $justify-content: null);
   }
 
   &__contact {

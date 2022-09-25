@@ -34,6 +34,8 @@ a {
 }
 
 // mixins
+@import './decimals';
+
 
 @mixin flex-box ($display: flex, $gap: 7px, $align-items: center, $justify-content: center) {
   display: $display;
@@ -45,7 +47,7 @@ a {
 @mixin fonts ($fw: 400, $fs: 14px, $lh: 16px, $ls: 0.02em) {
   font-weight: $fw;
   font-size: $fs;
-  line-height: calc( $lh / $fs );
+  line-height: decimal-round( $lh / $fs );
   letter-spacing: $ls;
 }
 

@@ -1,4 +1,5 @@
 .feedback-checkbox {
+    @extend %visually-hidden;
 
     &__field {
         @include flex-box ();

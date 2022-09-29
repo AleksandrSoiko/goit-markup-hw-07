@@ -1,4 +1,8 @@
 .section-advantage {
+    &__title--hidden {
+        @extend %visually-hidden;
+    }
+
     &__list {
         @include flex-box ($gap: 30px, $align-items: null, $justify-content: null);
     }

@@ -11,14 +11,14 @@ ul {
 }
 
 ul {
-  padding: 0;
+  padding-left: 0;
 }
 
 a {
   text-decoration: none;
 }
 
-.visually-hidden {
+.feedback-checkbox, .section-advantage__title--hidden {
   position: absolute;
   width: 1px;
   height: 1px;
